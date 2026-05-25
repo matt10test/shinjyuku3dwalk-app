@@ -4,15 +4,14 @@ import Joystick from './components/Joystick';
 import AddressSearch from './components/AddressSearch';
 import SpotSelector from './components/SpotSelector';
 
-// 新宿区の主要スポット (スタート: 戸塚警察署前)
+// 新宿区のおすすめスポット (スタート: 新宿駅)
 export const SPOTS = [
-  { id: 'totsuka',    name: '警視庁戸塚警察署',     center: [139.7106, 35.7133], bearing: 90  },
-  { id: 'takadanobaba', name: '高田馬場駅前交番',   center: [139.7043, 35.7129], bearing: 0   },
-  { id: 'totsuka1',   name: '戸塚一丁目交番',       center: [139.7189, 35.7120], bearing: 0   },
-  { id: 'shimo-mae',  name: '下落合駅前交番',       center: [139.6945, 35.7170], bearing: 0   },
-  { id: 'naka',       name: '中落合交番',           center: [139.6852, 35.7205], bearing: 0   },
-  { id: 'nishi',      name: '西落合交番',           center: [139.6795, 35.7231], bearing: 0   },
-  { id: 'shimo3',     name: '下落合三丁目駐在所',   center: [139.7043, 35.7203], bearing: 0   },
+  { id: 'shinjuku',   name: '新宿駅',               center: [139.7006, 35.6896], bearing: 0   },
+  { id: 'tochomae',   name: '東京都庁',             center: [139.6917, 35.6896], bearing: 0   },
+  { id: 'gyoen',      name: '新宿御苑',             center: [139.7102, 35.6851], bearing: 0   },
+  { id: 'kabukicho',  name: '歌舞伎町',             center: [139.7036, 35.6952], bearing: 0   },
+  { id: 'hanazono',   name: '花園神社',             center: [139.7075, 35.6930], bearing: 0   },
+  { id: 'isetan',     name: '伊勢丹新宿店',         center: [139.7039, 35.6919], bearing: 0   },
 ];
 
 // GSI muniCd (5桁) → 市区町村名
@@ -134,7 +133,7 @@ export default function App() {
 
       {/* 上部: タイトルバー */}
       <div style={styles.topBar}>
-        <span style={styles.title}>戸塚3D探索</span>
+        <span style={styles.title}>新宿3D探索</span>
         <button style={styles.spotBtn} onClick={() => setShowSpots(v => !v)}>
           📍 {activeSpot.name}
         </button>

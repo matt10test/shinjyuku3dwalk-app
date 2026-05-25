@@ -1,7 +1,7 @@
 # 新宿3D探索Webアプリ
 
 ## GitHubリポジトリ
-https://github.com/ma10mat/totsuka3d-app.git
+https://github.com/ma10mat/shinjyuku3d-app.git
 
 ## 開発サーバー起動
 ```

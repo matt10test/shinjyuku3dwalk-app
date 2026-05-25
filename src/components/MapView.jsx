@@ -285,12 +285,11 @@ export default function MapView({ initialSpot, joystickRef, onMapReady, onCharac
         })
         .catch(() => addOsmBuildings(map))
         .finally(() => {
-          // 警察署・交番を赤色で表示
           map.addSource('police-buildings', { type: 'geojson', data: `${import.meta.env.BASE_URL}police-buildings.geojson` });
           map.addLayer({
             id: 'police-3d', type: 'fill-extrusion', source: 'police-buildings',
             paint: {
-              'fill-extrusion-color':   '#cc2200',
+              'fill-extrusion-color':   BUILDING_COLOR,
               'fill-extrusion-height':  ['get', 'height'],
               'fill-extrusion-base':    0,
               'fill-extrusion-opacity': 0.95,
