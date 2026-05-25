@@ -283,7 +283,7 @@ export default function MapView({ initialSpot, joystickRef, onMapReady, onCharac
               'fill-extrusion-color':   BUILDING_COLOR,
               'fill-extrusion-height':  ['get', 'height'],
               'fill-extrusion-base':    0,
-              'fill-extrusion-opacity': 0.01,
+              'fill-extrusion-opacity': 0.06,
             },
           });
           // 建物レイヤー追加完了後にキャラクターレイヤーを追加
@@ -324,7 +324,7 @@ function addBuildingLayer(map, source) {
       'fill-extrusion-color':   BUILDING_COLOR,
       'fill-extrusion-height':  ['coalesce', ['get', 'height'], 10],
       'fill-extrusion-base':    ['coalesce', ['get', 'min_height'], 0],
-      'fill-extrusion-opacity': 0.01,
+      'fill-extrusion-opacity': 0.06,
     },
   }, firstLabel);
 }
@@ -351,7 +351,7 @@ function addOsmBuildings(map) {
       'fill-extrusion-color':   BUILDING_COLOR,
       'fill-extrusion-height':  ['coalesce', ['get', 'render_height'], ['get', 'height'], 10],
       'fill-extrusion-base':    ['coalesce', ['get', 'render_min_height'], ['get', 'min_height'], 0],
-      'fill-extrusion-opacity': 0.01,
+      'fill-extrusion-opacity': 0.06,
     },
   }, firstLabel);
 }
