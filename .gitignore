@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+.env.local
+public/plateau-buildings.geojson
+*.zip
+screenshot*.png
