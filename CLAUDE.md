@@ -13,3 +13,8 @@ npm run dev
 npm run convert
 ```
 `13104_shinjuku-ku_pref_2025_citygml_1_op.zip` を `public/plateau-buildings.geojson` に変換する。
+
+## Git運用ルール
+- コードを変更するたびに、変更内容をコミットしてGitHubにプッシュする。
+- プッシュ先: https://github.com/ma10mat/shinjyuku3d-app.git（ブランチ: main）
+- GitHub Pagesへの反映はプッシュ後に自動でデプロイされる（1〜2分）。
