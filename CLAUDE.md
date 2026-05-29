@@ -1,7 +1,7 @@
 # 新宿3D探索Webアプリ
 
 ## GitHubリポジトリ
-https://github.com/matt10test/shinjyuku3dwork-app.git
+https://github.com/matt10test/shinjyuku3dwalk.git
 
 ## 開発サーバー起動
 ```
@@ -15,7 +15,7 @@ npm run convert
 `13104_shinjuku-ku_pref_2025_citygml_1_op.zip` を `public/plateau-buildings.geojson` に変換する。
 
 ## デプロイ先
-https://matt10test.github.io/shinjyuku3dwork-app/
+https://matt10test.github.io/shinjyuku3dwalk/
 
 ## 技術スタック
 | 用途 | ライブラリ・ツール |
@@ -36,5 +36,5 @@ https://matt10test.github.io/shinjyuku3dwork-app/
 
 ## Git運用ルール
 - コードを変更するたびに、変更内容をコミットしてGitHubにプッシュする。
-- プッシュ先: https://github.com/matt10test/shinjyuku3dwork-app.git（ブランチ: main）
+- プッシュ先: https://github.com/matt10test/shinjyuku3dwalk.git（ブランチ: main）
 - GitHub Pagesへの反映はプッシュ後に自動でデプロイされる（1〜2分）。
