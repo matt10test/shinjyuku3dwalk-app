@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/shinjyuku3d-app/',
+  base: '/shinjyuku3dwork-app/',
 })
